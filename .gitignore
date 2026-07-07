@@ -13,3 +13,6 @@ test-results/
 
 # Logs
 *.log
+
+# Reference solution staged locally for the solutions branch; never on student main
+.solution/

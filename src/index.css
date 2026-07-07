@@ -1,5 +1,5 @@
-/* Styling baseline for the React sessions. Sessions 6 to 8 build on these
-   class names, so the exercises never stall on CSS. */
+/* The Session 5 styling baseline, extended for Session 6: a card grid, a
+   selected state, and a strikethrough for completed to-do items. */
 
 * {
     box-sizing: border-box;
@@ -40,7 +40,33 @@ h1 {
     margin-bottom: 0.25rem;
 }
 
+.card img {
+    display: block;
+    width: 100%;
+    border-radius: 8px;
+}
+
 .card.highlighted {
     border-color: #f59e0b;
     background-color: #fffbeb;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 1rem;
+}
+
+.grid .card {
+    margin-bottom: 0;
+}
+
+.card.selected {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.35);
+}
+
+.done {
+    text-decoration: line-through;
+    color: #71717a;
 }

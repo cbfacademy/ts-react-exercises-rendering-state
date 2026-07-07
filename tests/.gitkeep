@@ -1,3 +1,0 @@
-# The autograding tests go in this folder, named <name>.test.tsx.
-# Import components under test from ../src. They run under jsdom with React
-# Testing Library. Vitest runs them from the repo root via `npm test`.
