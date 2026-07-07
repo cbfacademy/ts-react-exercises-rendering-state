@@ -1,19 +1,25 @@
 import type { ReactNode } from 'react';
 
-// The <Card> from Session 5's guided exercise, carried forward as
-// infrastructure so today's exercise can focus on lists, keys, and state.
-// Some tasks need more from it (a selected look, a click handler): extending
-// this component's props is part of the exercise, not cheating.
+// Session 6 reference solution: the Session 5 Card extended with an optional
+// `selected` look and an `onClick` handler, as the exercise invites.
 
 interface CardProps {
     title: string;
     subtitle?: string;
     children: ReactNode;
+    selected?: boolean;
+    onClick?: () => void;
 }
 
-function Card({ title, subtitle, children }: CardProps) {
+function Card({
+    title,
+    subtitle,
+    children,
+    selected = false,
+    onClick,
+}: CardProps) {
     return (
-        <div className="card">
+        <div className={selected ? 'card selected' : 'card'} onClick={onClick}>
             <h2>{title}</h2>
             {subtitle ? <p>{subtitle}</p> : null}
             {children}
