@@ -1,0 +1,15 @@
+# Dependencies and build output
+node_modules/
+dist/
+
+# Autograding test report (regenerated on every run)
+test-results/
+
+# TS build info
+*.tsbuildinfo
+
+# Operating system noise
+.DS_Store
+
+# Logs
+*.log

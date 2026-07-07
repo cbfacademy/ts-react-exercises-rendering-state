@@ -1,0 +1,46 @@
+/* Styling baseline for the React sessions. Sessions 6 to 8 build on these
+   class names, so the exercises never stall on CSS. */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family:
+        system-ui,
+        -apple-system,
+        'Segoe UI',
+        sans-serif;
+    line-height: 1.5;
+    background-color: #f4f4f5;
+    color: #18181b;
+}
+
+#root {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+h1 {
+    margin-top: 0;
+}
+
+.card {
+    background-color: #ffffff;
+    border: 1px solid #d4d4d8;
+    border-radius: 12px;
+    padding: 1rem 1.25rem;
+    margin-bottom: 1rem;
+}
+
+.card h2 {
+    margin-top: 0;
+    margin-bottom: 0.25rem;
+}
+
+.card.highlighted {
+    border-color: #f59e0b;
+    background-color: #fffbeb;
+}
